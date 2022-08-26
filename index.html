@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=5 max=30 step=1 value=10>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4 >
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button style="margin-right: 8px ;">Selection</button>
+                    <button style="margin-left: 8px ;">Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+
+            <h3>TIME COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="array_container">
+            <p></p>
+        </div>
+
+        <div id="Info_Cont2">
+
+            <h3>SPACE COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <div id="Info_Cont3">
+            
+        
+            <h1>About The algorithm</h1>
+            <p id="description"></p>
+
+            <h1>Pseudo Code</h1>
+            <p id="pseudo"></p>
+            <p id="pseudo1"></p>
+            <p id="pseudo2"></p>
+            <p id="pseudo3"></p>
+            <p id="pseudo4"></p>
+            <p id="pseudo5"></p>
+            <p id="pseudo6"></p>
+            <p id="pseudo7"></p>
+            <p id="pseudo8"></p>
+            <p id="pseudo9"></p>
+            <p id="pseudo10"></p>
+       
+    </div>
+    <div class="array_info" style="  padding: 2% 10%;">
+        <p style="margin-top: 50px;"><span style="color: blue;">Blue</span> : default</p>
+        <p><span style="color: yellow;">Yellow</span> : Being compared</p>
+        <p><span style="color: red;">Red</span> : Identified as in incorrect position and to be moved</p>
+        <p><span style="color: green;">Green</span> : In correct position</p> 
+    </div>
+
+    <footer>
+    <div class="container">
+    <p>Copyright: SBU MINI PROJECT BY - Shubham Kumar, Keshav Agarwal, Vishal Kumar. All Rights Reserved | Contact Us: +91 7903546389</p>
+    </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+</html>
